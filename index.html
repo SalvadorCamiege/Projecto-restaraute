@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Serve bem</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    
+    
+</head>
+<body>
+
+     <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="">
+
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-itens">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-itens">
+                        <a href="#cardapio" class="nav-link">Cardápio</a>
+                    </li>
+
+                    <li class="nav-itens">
+                        <a href="#galeria" class="nav-link">Galeria de Fotos</a>
+                    </li>
+
+                    <li class="nav-itens">
+                        <a href="#perguntas" class="nav-link">Perguntas Frequemtes</a>
+                    </li>
+
+                    <li class="nav-itens">
+                        <a href="#contacto" class="nav-link">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="botao">
+                  <button><a href="#">Entra</a></button>
+            </div>
+
+        
+            <div class="mobile-menu-icon">
+                  <button onclick="menuShow()">
+                    <img class="icon" src="imagens/sal01.png" alt="banner">
+                  </button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-itens">
+                    <a href="#" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-itens">
+                    <a href="#cardapio" class="nav-link">Cardápio</a>
+                </li>
+
+                <li class="nav-itens">
+                    <a href="#galeria" class="nav-link">Galeria de Fotos</a>
+                </li>
+
+                <li class="nav-itens">
+                    <a href="#perguntas" class="nav-link">Perguntas Frequemtes</a>
+                </li>
+
+                <li class="nav-itens">
+                    <a href="#contacto" class="nav-link">Contactos</a>
+                </li>
+            </ul>
+
+            <div class="botao">
+                <button><a href="#">Entra</a></button>
+          </div>
+
+
+        </div>
+     </header>
+     <script src="js/script.js"></script>
+     
+    <main class="main_content container">
+        <section id="inicio" class="section-chamada container">
+            
+            <div class="content">
+                
+                <article class="topoPag">
+                  <div class="mascara">                              
+                          
+                      <div class="centraliza">
+                          <h1 class="branco"> SERVE BEM</h1>
+                          <p class="branco">O sabor que você mereçe.</b></p>
+                      </div>                              
+                                                        
+                    <img src="imagens/banner-home.jpg" alt="Você Fitness" title="Você Fitness"/>
+
+                  </div>
+                </article>
+            
+            <div class="clear"></div>
+            </div>
+
+        </section>
+       
+        
+        </section>
+
+        <section class="salvador" >
+           
+            <div class="conteinder">
+                    
+                    <h2 id="cardapio">Cardápio</h2>
+                    
+                 <div class="gallary-row">
+                    
+                          <div>
+                    
+                                <img src="imagens/salvador01.jpg" alt="alimento"></div>
+                    
+                            <div>
+                                <img src="imagens/salvador04.jpg" alt="alimento">
+                            </div>
+                    
+                            <div>
+                                <img src="imagens/salvador06.jpg" alt="alimento">
+                            </div>
+
+                            <div>
+                                <img src="imagens/salvador 7.jpg" alt="alimento">
+                            </div>
+                     </div>
+            </div>
+                
+        
+        </section>
+
+        <section class="ana" id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallary-row">
+                <div>
+                    <img src="imagens/1.jpg" alt="">
+                </div>
+                
+                <div>
+                    <img src="imagens/2.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/3.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/4.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/5.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/6.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/7.jpg" alt="">
+                </div>
+
+                <div>
+                    <img src="imagens/8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="salvador" id="perguntas">
+            
+            
+            <h2>Perguntas Frequentes</h2>
+           
+           
+            <div class="rosa">
+
+               
+              <form action="php">
+                  
+                   <div>
+                      <label for="ireserva">Quais são as formas de pagamentos?</label>
+                   </div>
+                   <p><input type="text" name="reserva" id="ireserva"></p>
+                   <div>
+                      <label for="isalvador">Posso reservar uma messa para um numero de pessoas especificos?</label>
+                              </div>
+                              <p>  <input type="text" name="reserva" id="isalvador"></p>
+                   <div>
+                       <label for="inatalha"> Quando posso cancelar uma reserva?</label>
+                   <div>
+                       <p> <input type="text" name="natalha" id="inatalha"></p>
+                   <div>
+                       <label for="ica">Como posso fazer a minha reserva</label>
+                   </div>
+                   <p><input type="text" name="reserva" id="ica"></p>
+                   <div>
+                       <label for="irosa">Posso pagar usando o bai directo, express ou E-kwanza?</label>
+                   </div>
+                   <p><input type="text" name="rosa" id="irosa"></p>
+                   </div>
+
+                   <input type="submit" value="enviar">
+              </form>
+
+        </section>
+
+      
+    </main>
+
+    <footer>
+        <section class="pedro">
+            <h2>Contactos</h2>
+
+            <p id="contacto">Entra em contacto comigo por meio das minhas redes sociais</p>
+
+
+            <div >
+                <div>
+                
+                    <a href="https://free.facebook.com/salvadorcamiege.sc?eav=AfZekZfspeRnatXGZtUMFyKuXS0whE-kvKMNbhLtNXyWlTiILTaWVEkxla1StWGKqQ4&ref_component=mfreebasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=8&paipv=0" target="_blank"><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+                </div>
+                
+                <div>
+                     <a href="https://github.com/SalvadorCamiege" target="_blank"><img src="imagens/logo-github.jpg" alt="github"></a>
+                
+                </div>
+                
+                <div>
+                    <a href="https://www.instagram.com/salvadorcamiege/" target="_blank"><img src="imagens/logo-instagram.jpg" alt="istragram"></a>
+                </div>
+               
+                <div>
+                    <a href="https://twitter.com/SCamiege" target="_blank"><img src="imagens/logo-twitter.jpg" alt="github"></a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/salvador-camiege-564b16288/" target="_blank"><img src="imagens/linkedin-icon.png" alt="linkedin"></a>
+                </div>
+            </div>
+
+         
+           
+        </section>
+
+        
+            
+
+    </footer>
+    
+</body>
+</html>
