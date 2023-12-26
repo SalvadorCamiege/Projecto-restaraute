@@ -168,8 +168,6 @@ a:hover{
             }
         
         .topoPag  {
-             width:100%;
-             height:100%;
              background-color:transparent;
              float:left;
              position:relative; 
@@ -189,18 +187,18 @@ a:hover{
         .topoPag .centraliza     {
             width: 90%; 
             height:auto;
-             top:26%; 
-             position:absolute; 
-             margin:0 5%; 
+            top:26%; 
+            position:absolute; 
+            margin:0 5%; 
         }
         
-        .topoPag  img            { 
+        .topoPag  img { 
             width:100%;
          }
         
         .topoPag .centraliza h1  {
               width: 100%; 
-              font-size:2em; 
+              font-size: 2em; 
               float:left;
               text-align:center; 
               color: white;
@@ -212,11 +210,11 @@ a:hover{
         .topoPag .centraliza p   {
              width:100%; 
              font-size:1em;
-              float:left; 
-              text-align:center; 
-              color: white;
-              text-transform:uppercase; 
-              font-family:'open_sansregular';
+             float:left; 
+             text-align:center; 
+             color: white;
+             text-transform:uppercase; 
+             font-family:'open_sansregular';
              }
        
        
@@ -225,7 +223,8 @@ a:hover{
         }
 
   
- .nelma h2{
+
+     .nelma h2{
         color: white;
         font-size: 3em;
         margin-top: 15px;
@@ -249,7 +248,7 @@ a:hover{
 }
 
     .gallary-row div{
-       flex: 1 1 300px;
+       flex: 1 1 350px;
     
 }
 
@@ -288,7 +287,7 @@ div .conteinder{
     
 }
 
-section{
+.ana{
     background-color: rgb(87, 85, 85);
     padding: 5px 2px 5px;
 }
@@ -328,7 +327,7 @@ input{
 }
 
 
-.pedro{
+footer{
     background-color: rgba(244, 119, 119, 0.692);
     padding: 10px;
 }
@@ -370,13 +369,183 @@ input{
 
 
 
+body{
+    background-color: rgb(238, 234, 234);
+    background-image: url("../imagens/fundo-madeira.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%,-50%);
+    transition: widht .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login> div#foto{
+    display: block;
+    background:#5f2c82 url('../imagens/5.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
+    
+}
+
+section#login> div#formularios{
+    display: block;
+    padding: 10px;
+}
+
+div#formularios h1{
+       text-align: center;
+       margin-bottom: 10px;
+}
+
+div#formularios p{
+    font-size: 0.8em;
+}
+
+form > div.campo{
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo> label{
+    display: none;
+}
+
+div.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+div.campo > input{
+    background-color: #49a09d; 
+    font-size: 1em;
+    width: calc(100% - 70px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 2px;
+    transform: translateY(-10px);
+ 
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    background-color: #49a09d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+form > input[type=submit]:hover{
+        background-color: #3f6766;
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #98eae8;
+    border-radius: 7px;
+    color: #344746;
+}
+
+form > a.botao:hover{
+    background-color: #49a09d;
+
+}
+
+form > a.botao > i{
+    font-size: 0.8em;
+}
 
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+         section#login{
+              width: 80%;
+              height: 480px;
+         }
+
+         div#foto{
+            float: left;
+             width: 100%;
+             height: 100px;
+             
+         }
+
+         div#formularios p{
+            font-size: 1.5em;
+            margin-bottom: 10px;
+         }
+
+         div#formularios h1{
+            font-size: 1.8em;
+         }
+
+       
+        
+}
 
 
+ @media screen and (min-width:992px) {
+       section#login{
+            width: 90%;
+            height: 90%;
+       }
 
+       div#foto{
+           width: 100%;
+           height: 100%;
+       }
 
+       div#formularios h1{
+          font-size: 2em;
+       }
 
+       div#formularios p{
+          font-size: 2em;
+       }
+ }
 
 
 
